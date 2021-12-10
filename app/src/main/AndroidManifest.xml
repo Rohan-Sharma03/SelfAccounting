@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.therohansharma03.selfaccounting">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher_icon"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_icon_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.SelfAccounting"
+        android:usesCleartextTraffic="true">
+        <activity
+            android:name=".StatementByDate"
+            android:exported="false"
+            android:parentActivityName=".StatementByDate"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".StatementByUniqueID"
+            android:exported="false"
+            android:parentActivityName=".StatementByUniqueID"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".StatementByCommodity"
+            android:exported="false"
+            android:parentActivityName=".StatementByCommodity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".StatementByFirstName"
+            android:exported="false"
+            android:parentActivityName=".StatementByFirstName"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name=".UpdateUser"
+            android:exported="true"
+            android:parentActivityName=".UpdateUser"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".UpdatePassword"
+            android:exported="true"
+            android:parentActivityName=".UpdatePassword"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".AccountSetting"
+            android:exported="true"
+            android:parentActivityName=".AccountSetting"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".GeneralSetting"
+            android:exported="true"
+            android:parentActivityName=".GeneralSetting"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Help"
+            android:exported="true"
+            android:parentActivityName=".MainMenu"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".StatementGetAll"
+            android:exported="true"
+            android:parentActivityName=".StatementGetAll"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Billing"
+            android:exported="true"
+            android:parentActivityName=".MainMenu"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".MainMenu"
+            android:exported="true"
+            android:label="@string/title_activity_main_menu"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.SelfAccounting.NoActionBar" />
+        <activity
+            android:name=".Register"
+            android:exported="true"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Login"
+            android:exported="true"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

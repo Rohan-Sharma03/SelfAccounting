@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "700064886688",
+    "project_id": "selfaccounting-10d34",
+    "storage_bucket": "selfaccounting-10d34.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:700064886688:android:060993694d283ea42a7ec5",
+        "android_client_info": {
+          "package_name": "com.therohansharma03.selfaccounting"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "700064886688-p8d963vbi7m63fha5r1eaj8n8kaijjas.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDnvz7YtAYPlPyQx_7APmKC23qCxWQm0ac"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "700064886688-p8d963vbi7m63fha5r1eaj8n8kaijjas.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

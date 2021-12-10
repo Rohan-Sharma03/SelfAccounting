@@ -1,0 +1,353 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#d4c5cb"
+    tools:context=".ui.home.HomeFragment">
+
+    <Button
+        android:id="@+id/hProceedToBillBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:background="@drawable/btn_background"
+        android:text="Procced To bill"
+        android:textColor="#424242"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/hRsidentialAddress" />
+
+    <EditText
+        android:id="@+id/hFirstName"
+        android:layout_width="120dp"
+        android:layout_height="51dp"
+        android:layout_marginTop="48dp"
+        android:background="@drawable/for_home_edittext_backgroud"
+        android:ems="10"
+        android:inputType="textCapWords"
+        android:hint="First name"
+        android:minHeight="48dp"
+        android:padding="10dp"
+        app:layout_constraintEnd_toStartOf="@+id/hLastName"
+        app:layout_constraintHorizontal_bias="0.938"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/hLastName"
+        android:layout_width="114dp"
+        android:layout_height="51dp"
+        android:layout_marginTop="48dp"
+        android:layout_marginEnd="64dp"
+        android:background="@drawable/for_home_edittext_backgroud"
+        android:ems="10"
+        android:hint="Last name"
+        android:inputType="textCapWords"
+        android:minHeight="48dp"
+        android:padding="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/hCommodity"
+        android:layout_width="247dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/for_home_edittext_backgroud"
+        android:ems="10"
+        android:hint="Commodity"
+        android:inputType="textCapWords"
+        android:minHeight="48dp"
+        android:padding="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.573"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/hFirstName" />
+
+    <EditText
+        android:id="@+id/hModePayment"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/for_home_edittext_backgroud"
+        android:ems="10"
+        android:hint="Mode of pyament"
+        android:inputType="textCapWords"
+        android:minHeight="48dp"
+        android:padding="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.467"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/hWeight" />
+
+    <EditText
+        android:id="@+id/hAccountNumber"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/for_home_edittext_backgroud"
+        android:ems="10"
+        android:hint="Account Number "
+        android:inputType="textPersonName"
+        android:minHeight="48dp"
+        android:padding="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.467"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/hModePayment" />
+
+    <EditText
+        android:id="@+id/hIfscCode"
+        android:layout_width="139dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="12dp"
+        android:background="@drawable/for_home_edittext_backgroud"
+        android:ems="10"
+        android:hint="IFC Code"
+        android:minHeight="48dp"
+        android:padding="10dp"
+        android:inputType="textCapCharacters"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.345"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/hAccountNumber" />
+
+    <TextView
+        android:id="@+id/hBankName"
+        android:layout_width="212dp"
+        android:layout_height="28dp"
+        android:layout_marginEnd="52dp"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/hIfscCode" />
+
+    <Button
+        android:id="@+id/hCheckIfsc"
+        android:layout_width="55dp"
+        android:layout_height="48dp"
+        android:background="@drawable/btn_background"
+        android:text="Ck"
+        android:textColor="#424242"
+        app:layout_constraintBaseline_toBaselineOf="@+id/hIfscCode"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.137"
+        app:layout_constraintStart_toEndOf="@+id/hIfscCode" />
+
+    <TextView
+        android:id="@+id/hBranchName"
+        android:layout_width="212dp"
+        android:layout_height="58dp"
+        android:layout_marginEnd="52dp"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/hBankName" />
+
+    <TextView
+        android:id="@+id/textView10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="44dp"
+        android:text="Bank :-"
+        android:textColor="#424242"
+        app:layout_constraintBaseline_toBaselineOf="@+id/hBankName"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/textView11"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="44dp"
+        android:text="Address :-"
+        android:textColor="#424242"
+        app:layout_constraintBaseline_toBaselineOf="@+id/hBranchName"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:id="@+id/hBasicRates"
+        android:layout_width="126dp"
+        android:layout_height="52dp"
+        android:layout_marginTop="12dp"
+        android:background="@drawable/for_home_edittext_backgroud"
+        android:ems="10"
+        android:hint="Basic rate (₹)"
+        android:inputType="numberDecimal|phone"
+        android:padding="10dp"
+        app:layout_constraintEnd_toStartOf="@+id/hWeight"
+        app:layout_constraintHorizontal_bias="0.61"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/hCommodity" />
+
+    <EditText
+        android:id="@+id/hWeight"
+        android:layout_width="115dp"
+        android:layout_height="51dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="16dp"
+        android:background="@drawable/for_home_edittext_backgroud"
+        android:ems="10"
+        android:hint="Weight (kg)"
+        android:inputType="numberDecimal|phone"
+        android:padding="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/hCommodity" />
+
+    <EditText
+        android:id="@+id/hRsidentialAddress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:background="@drawable/for_home_edittext_backgroud"
+        android:ems="10"
+        android:hint="Residential address"
+        android:inputType="textCapWords"
+        android:minHeight="48dp"
+        android:padding="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.467"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/hMobileNumber" />
+
+    <ImageView
+        android:id="@+id/imageView9"
+        android:layout_width="31dp"
+        android:layout_height="35dp"
+        android:layout_marginTop="48dp"
+        android:src="@drawable/farmer_name_img"
+        app:layout_constraintEnd_toStartOf="@+id/hFirstName"
+        app:layout_constraintHorizontal_bias="0.73"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView10"
+        android:layout_width="31dp"
+        android:layout_height="35dp"
+        android:src="@drawable/commodity_img"
+        app:layout_constraintBottom_toTopOf="@+id/textView10"
+        app:layout_constraintEnd_toStartOf="@+id/hCommodity"
+        app:layout_constraintHorizontal_bias="0.746"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView9"
+        app:layout_constraintVertical_bias="0.107" />
+
+    <ImageView
+        android:id="@+id/imageView11"
+        android:layout_width="30dp"
+        android:layout_height="35dp"
+        android:src="@drawable/price_tag_img"
+        app:layout_constraintBottom_toTopOf="@+id/textView10"
+        app:layout_constraintEnd_toStartOf="@+id/hBasicRates"
+        app:layout_constraintHorizontal_bias="0.671"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView10"
+        app:layout_constraintVertical_bias="0.145" />
+
+    <ImageView
+        android:id="@+id/imageView12"
+        android:layout_width="30dp"
+        android:layout_height="34dp"
+        android:src="@drawable/payment_img"
+        app:layout_constraintBottom_toTopOf="@+id/textView10"
+        app:layout_constraintEnd_toStartOf="@+id/hModePayment"
+        app:layout_constraintHorizontal_bias="0.732"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView11"
+        app:layout_constraintVertical_bias="0.165" />
+
+    <ImageView
+        android:id="@+id/imageView13"
+        android:layout_width="30dp"
+        android:layout_height="36dp"
+        android:src="@drawable/bank_account_img"
+        app:layout_constraintBottom_toTopOf="@+id/textView10"
+        app:layout_constraintEnd_toStartOf="@+id/hAccountNumber"
+        app:layout_constraintHorizontal_bias="0.718"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView12"
+        app:layout_constraintVertical_bias="0.271" />
+
+    <ImageView
+        android:id="@+id/imageView14"
+        android:layout_width="29dp"
+        android:layout_height="36dp"
+        android:src="@drawable/ifsccode_img"
+        app:layout_constraintBottom_toTopOf="@+id/textView10"
+        app:layout_constraintEnd_toStartOf="@+id/hIfscCode"
+        app:layout_constraintHorizontal_bias="0.676"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView13"
+        app:layout_constraintVertical_bias="0.674" />
+
+    <ImageView
+        android:id="@+id/imageView15"
+        android:layout_width="31dp"
+        android:layout_height="34dp"
+        android:layout_marginStart="12dp"
+        android:src="@drawable/weight_img"
+        app:layout_constraintBottom_toTopOf="@+id/hModePayment"
+        app:layout_constraintStart_toEndOf="@+id/hBasicRates"
+        app:layout_constraintTop_toBottomOf="@+id/hCommodity"
+        app:layout_constraintVertical_bias="0.466" />
+
+    <ImageView
+        android:id="@+id/imageView16"
+        android:layout_width="28dp"
+        android:layout_height="36dp"
+        android:src="@drawable/home_address_img"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/hRsidentialAddress"
+        app:layout_constraintHorizontal_bias="0.621"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView11"
+        app:layout_constraintVertical_bias="0.468" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_begin="-7dp" />
+
+    <EditText
+        android:id="@+id/hMobileNumber"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/for_home_edittext_backgroud"
+        android:ems="10"
+        android:hint="Mobile Number"
+        android:inputType="phone"
+        android:minHeight="48dp"
+        android:padding="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.467"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/hBranchName" />
+
+    <ImageView
+        android:id="@+id/imageView17"
+        android:layout_width="29dp"
+        android:layout_height="35dp"
+        android:src="@drawable/phone_img"
+        app:layout_constraintBottom_toTopOf="@+id/imageView16"
+        app:layout_constraintEnd_toStartOf="@+id/hMobileNumber"
+        app:layout_constraintHorizontal_bias="0.63"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView11"
+        app:layout_constraintVertical_bias="0.625" />
+
+    <Switch
+        android:id="@+id/hf_switch_shift_to_local"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:minHeight="48dp"
+        android:text="Local"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

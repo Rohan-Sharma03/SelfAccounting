@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#d4c5cb"
+    tools:context=".ui.getstatement.GetStatementFragment">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:layout_editor_absoluteX="-8dp"
+        tools:layout_editor_absoluteY="0dp">
+
+        <EditText
+            android:id="@+id/GS_Statement_By_FirstName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/for_home_edittext_backgroud"
+            android:ems="10"
+            android:hint="First Name"
+            android:inputType="textCapWords"
+            android:minHeight="48dp"
+            android:padding="10dp"
+            app:layout_constraintBottom_toTopOf="@+id/GS_Statement_By_Commodity"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.497"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/GS_Statement_By_Unique_ID" />
+
+        <EditText
+            android:id="@+id/GS_Statement_By_Commodity"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/for_home_edittext_backgroud"
+            android:ems="10"
+            android:hint="Commodity"
+            android:inputType="textCapWords"
+            android:minHeight="48dp"
+            android:padding="10dp"
+            app:layout_constraintBottom_toTopOf="@+id/GS_Statement_By_FromDate"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.497"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/GS_Statement_By_FirstName" />
+
+        <EditText
+            android:id="@+id/GS_Statement_By_ToDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/for_home_edittext_backgroud"
+            android:ems="10"
+            android:hint="To Date"
+            android:inputType="numberDecimal|phone"
+            android:minHeight="48dp"
+            android:padding="10dp"
+            app:layout_constraintBottom_toTopOf="@+id/GS_Statement_By_LastThreeMonths"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.497"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/GS_Statement_By_FromDate"
+            app:layout_constraintVertical_bias="0.438"
+            tools:ignore="SpeakableTextPresentCheck" />
+
+
+        <EditText
+            android:id="@+id/GS_Statement_By_FromDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/for_home_edittext_backgroud"
+            android:ems="10"
+            android:hint="From Date"
+            android:inputType="numberDecimal|phone"
+            android:minHeight="48dp"
+            android:padding="10dp"
+            app:layout_constraintBottom_toTopOf="@+id/GS_Statement_By_ToDate"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.497"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/GS_Statement_By_Commodity" />
+
+        <EditText
+            android:id="@+id/GS_Statement_By_LastThreeMonths"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/for_home_edittext_backgroud"
+            android:ems="10"
+            android:hint="Quaterly"
+            android:inputType="numberDecimal|phone"
+            android:minHeight="48dp"
+            android:padding="10dp"
+            app:layout_constraintBottom_toTopOf="@+id/GS_Statement_GetQueryWiseData"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.497"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/GS_Statement_By_ToDate" />
+
+        <ImageView
+            android:id="@+id/imageView19"
+            android:layout_width="34dp"
+            android:layout_height="29dp"
+            android:padding="2dp"
+            android:src="@drawable/ic_baseline_import_export_24"
+            app:layout_constraintBottom_toTopOf="@+id/GS_Statement_By_ToDate"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.498"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/GS_Statement_By_FromDate"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <EditText
+            android:id="@+id/GS_Statement_By_Unique_ID"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/for_home_edittext_backgroud"
+            android:ems="10"
+            android:hint="Unique ID"
+            android:inputType="number"
+            android:minHeight="48dp"
+            android:padding="10dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.497"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.128" />
+
+        <Switch
+            android:id="@+id/GS_Statement_Btn_GetAll"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:minHeight="48dp"
+            android:text="Get All"
+            app:layout_constraintBottom_toTopOf="@+id/GS_Statement_By_Unique_ID"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.916"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.262" />
+
+        <Button
+            android:id="@+id/GS_Statement_GetQueryWiseData"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/for_home_edittext_backgroud"
+            android:text="Get"
+            android:textColor="@color/black"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.498"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.802" />
+
+        <ImageView
+            android:id="@+id/imageView9"
+            android:layout_width="31dp"
+            android:layout_height="35dp"
+            android:layout_marginTop="40dp"
+            android:src="@drawable/farmer_name_img"
+            app:layout_constraintEnd_toStartOf="@+id/GS_Statement_By_FirstName"
+            app:layout_constraintHorizontal_bias="0.753"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageView23" />
+
+        <ImageView
+            android:id="@+id/imageView10"
+            android:layout_width="31dp"
+            android:layout_height="35dp"
+            android:layout_marginBottom="440dp"
+            android:src="@drawable/commodity_img"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/GS_Statement_By_Commodity"
+            app:layout_constraintHorizontal_bias="0.753"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageView9"
+            app:layout_constraintVertical_bias="0.956" />
+
+        <ImageView
+            android:id="@+id/imageView21"
+            android:layout_width="31dp"
+            android:layout_height="32dp"
+            android:layout_marginTop="196dp"
+            android:src="@drawable/ic_baseline_calendar_today_24"
+            app:layout_constraintEnd_toStartOf="@+id/GS_Statement_By_FromDate"
+            app:layout_constraintHorizontal_bias="0.753"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageView10" />
+
+        <ImageView
+            android:id="@+id/imageView22"
+            android:layout_width="30dp"
+            android:layout_height="34dp"
+            android:src="@drawable/ic_baseline_date_range_24"
+            app:layout_constraintBottom_toTopOf="@+id/imageView21"
+            app:layout_constraintEnd_toStartOf="@+id/GS_Statement_By_FromDate"
+            app:layout_constraintHorizontal_bias="0.742"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageView10"
+            app:layout_constraintVertical_bias="0.472" />
+
+        <ImageView
+            android:id="@+id/imageView23"
+            android:layout_width="31dp"
+            android:layout_height="35dp"
+            android:layout_marginTop="88dp"
+            android:src="@drawable/ic_baseline_fingerprint_24"
+            app:layout_constraintEnd_toStartOf="@+id/GS_Statement_By_Unique_ID"
+            app:layout_constraintHorizontal_bias="0.753"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</FrameLayout>
+

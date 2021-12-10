@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#d4c5cb"
+    tools:context=".ui.updaterecord.UpdateRecordFragment">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <Button
+            android:id="@+id/test6"
+            android:layout_width="114dp"
+            android:layout_height="48dp"
+            android:background="@drawable/btn_background"
+            android:ems="10"
+            android:padding="10dp"
+            android:text="Update"
+            android:textColor="@color/black"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.498"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.786" />
+
+        <ImageView
+            android:id="@+id/imageView11"
+            android:layout_width="30dp"
+            android:layout_height="35dp"
+            android:layout_marginBottom="112dp"
+            android:src="@drawable/price_tag_img"
+            app:layout_constraintBottom_toTopOf="@+id/imageView24"
+            app:layout_constraintEnd_toStartOf="@+id/UR_New_Basic_Rates"
+            app:layout_constraintHorizontal_bias="0.677"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <EditText
+            android:id="@+id/UR_New_First_Name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/for_home_edittext_backgroud"
+            android:ems="10"
+            android:hint="First Name"
+            android:inputType="textCapWords"
+            android:minHeight="48dp"
+            android:padding="10dp"
+            app:layout_constraintBottom_toTopOf="@+id/UR_New_Last_Name"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.442"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/UR_New_Unique_Id"
+            app:layout_constraintVertical_bias="0.44" />
+
+        <EditText
+            android:id="@+id/UR_New_Last_Name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/for_home_edittext_backgroud"
+            android:ems="10"
+            android:hint="Last Name"
+            android:inputType="textCapWords"
+            android:minHeight="48dp"
+            android:padding="10dp"
+            app:layout_constraintBottom_toTopOf="@+id/UR_New_Basic_Rates"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.442"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/UR_New_First_Name" />
+
+        <EditText
+            android:id="@+id/UR_New_Account_Number"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/for_home_edittext_backgroud"
+            android:ems="10"
+            android:hint="Account Number "
+            android:inputType="textPersonName"
+            android:minHeight="48dp"
+            android:padding="10dp"
+            app:layout_constraintBottom_toTopOf="@+id/test6"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.442"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/UR_New_Weight" />
+
+        <EditText
+            android:id="@+id/UR_New_Weight"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/for_home_edittext_backgroud"
+            android:ems="10"
+            android:hint="Weight"
+            android:inputType="numberDecimal|phone"
+            android:minHeight="48dp"
+            android:padding="10dp"
+            app:layout_constraintBottom_toTopOf="@+id/UR_New_Account_Number"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.442"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/UR_New_Basic_Rates" />
+
+        <EditText
+            android:id="@+id/UR_New_Basic_Rates"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/for_home_edittext_backgroud"
+            android:ems="10"
+            android:hint="Basic Rates "
+            android:inputType="numberDecimal|phone"
+            android:minHeight="48dp"
+            android:padding="10dp"
+            app:layout_constraintBottom_toTopOf="@+id/UR_New_Weight"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.442"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/UR_New_Last_Name" />
+
+        <Button
+            android:id="@+id/test5"
+            android:layout_width="63dp"
+            android:layout_height="48dp"
+            android:background="@drawable/btn_background"
+            android:ems="10"
+            android:text="Ck"
+            android:textColor="@color/black"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.469"
+            app:layout_constraintStart_toEndOf="@+id/UR_New_Unique_Id"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.133" />
+
+        <EditText
+            android:id="@+id/UR_New_Unique_Id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/for_home_edittext_backgroud"
+            android:ems="10"
+            android:hint="UniqueId"
+            android:inputType="number"
+            android:minHeight="48dp"
+            android:padding="10dp"
+            app:layout_constraintBaseline_toBaselineOf="@+id/test5"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.442"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <TextView
+            android:id="@+id/UR_Delete_Seller_Data"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Delete this record ?"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:textColor="#9F2E2E"
+            app:layout_constraintHorizontal_bias="0.615"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.195" />
+
+        <ImageView
+            android:id="@+id/imageView20"
+            android:layout_width="31dp"
+            android:layout_height="34dp"
+            android:src="@drawable/weight_img"
+            app:layout_constraintBottom_toTopOf="@+id/imageView24"
+            app:layout_constraintEnd_toStartOf="@+id/UR_New_Weight"
+            app:layout_constraintHorizontal_bias="0.672"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageView11"
+            app:layout_constraintVertical_bias="0.493" />
+
+        <ImageView
+            android:id="@+id/imageView24"
+            android:layout_width="30dp"
+            android:layout_height="34dp"
+            android:layout_marginBottom="220dp"
+            android:src="@drawable/bank_account_img"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/UR_New_Account_Number"
+            app:layout_constraintHorizontal_bias="0.661"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <ImageView
+            android:id="@+id/imageView25"
+            android:layout_width="30dp"
+            android:layout_height="35dp"
+            android:layout_marginBottom="60dp"
+            android:src="@drawable/ic_baseline_fingerprint_24"
+            app:layout_constraintBottom_toTopOf="@+id/imageView26"
+            app:layout_constraintEnd_toStartOf="@+id/UR_New_Unique_Id"
+            app:layout_constraintHorizontal_bias="0.677"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.99" />
+
+        <ImageView
+            android:id="@+id/imageView26"
+            android:layout_width="29dp"
+            android:layout_height="35dp"
+            android:layout_marginBottom="96dp"
+            android:src="@drawable/farmer_name_img"
+            app:layout_constraintBottom_toTopOf="@+id/imageView11"
+            app:layout_constraintEnd_toStartOf="@+id/UR_New_Last_Name"
+            app:layout_constraintHorizontal_bias="0.666"
+            app:layout_constraintStart_toStartOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</FrameLayout>
